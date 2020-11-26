@@ -5,20 +5,20 @@ public class Cat {
     String name;
     String breed;
 
-    public int getYear () {
+    public int getYear() {
         return year;
     }
-    public void setYear (int y) {
+    public void setYear(int y) {
         if (y <= 0) {
             System.out.println("Mistake!");
             return;
         }
         year = y;
     }
-    public void setName (String n) {
+    public void setName(String n) {
         name = n;
     }
-    public void setBreed (String b) {
+    public void setBreed(String b) {
         breed = b;
     }
 }

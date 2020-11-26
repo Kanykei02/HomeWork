@@ -5,17 +5,17 @@ public class Dog {
     String name;
     int paws;
 
-    public int getYear () {
+    public int getYear() {
         return year;
     }
-    public void setYear (int year) {
+    public void setYear(int year) {
         if (year <= 0) {
             System.out.println("Mistake!");
             return;
         }
         this.year = year;
     }
-    public void setName (String n) {
+    public void setName(String n) {
         name = n;
     }
     public void setPaws(int p) {
