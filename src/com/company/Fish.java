@@ -8,6 +8,12 @@ public class Fish {
     public int getYear() {
         return year;
     }
+    public String getName() {
+        return name;
+    }
+    public String getColor() {
+        return color;
+    }
     public void setYear(int y) {
         if (y <= 0) {
             System.out.println("Mistake!");

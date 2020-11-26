@@ -8,6 +8,12 @@ public class Cat {
     public int getYear() {
         return year;
     }
+    public String getName() {
+        return name;
+    }
+    public String getBreed () {
+        return breed;
+    }
     public void setYear(int y) {
         if (y <= 0) {
             System.out.println("Mistake!");

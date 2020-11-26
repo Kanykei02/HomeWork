@@ -8,6 +8,12 @@ public class Parrot {
     public int getYear() {
         return year;
     }
+    public String getName() {
+        return name;
+    }
+    public int getGrowth() {
+        return growth;
+    }
     public void setYear(int y) {
         if (y <= 0) {
             System.out.println("Mistake!");

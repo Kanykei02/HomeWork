@@ -8,6 +8,12 @@ public class Dog {
     public int getYear() {
         return year;
     }
+    public String getName() {
+        return name;
+    }
+    public int getPaws() {
+        return paws;
+    }
     public void setYear(int year) {
         if (year <= 0) {
             System.out.println("Mistake!");
