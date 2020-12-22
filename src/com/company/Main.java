@@ -19,5 +19,14 @@ public class Main {
             System.out.println(array[i] + " ");
         }
 
+        System.out.println("Кого ищете?");
+        String name = sc.nextLine();
+        for(int i = 0; i < array.length; i++){
+            if (name == array[i].getLeader()) {
+                System.out.println("Нашли!");
+                break;
+            }
+        }
+
     }
 }
