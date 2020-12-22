@@ -11,10 +11,6 @@ public abstract  class AbstractLocality {
         this.leader = leader;
     }
 
-    public abstract void districts();
-
-    public abstract void search();
-
     public String getName() {
         return name;
     }

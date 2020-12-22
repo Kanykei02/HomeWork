@@ -1,29 +1,23 @@
 package com.company;
 
+import javax.sound.midi.Soundbank;
 import java.util.Scanner;
 
 public class Main {
 
     public static void main(String[] args) {
-        AbstractLocality kansas = new Kansas("Kansas , ", "Stive");
-        kansas.districts();
-        System.out.println(kansas.getName() + kansas.getLeader());
-        kansas.search();
-        AbstractLocality newyork = new NewYork("NewYork , ", "Mark");
-        newyork.districts();
-        System.out.println(newyork.getName() + newyork.getLeader());
-        newyork.search();
-        AbstractLocality washington = new Washington("Washington , ", "Billy");
-        washington.districts();
-        System.out.println(washington.getName() + washington.getLeader());
-        washington.search();
-        AbstractLocality finix = new Finix("Finix , ", "Mark");
-        finix.districts();
-        System.out.println(finix.getName() + finix.getLeader());
-        finix.search();
-        AbstractLocality sanAntonio = new SanAntonio("San-Antonio , ", "Cas");
-        sanAntonio.districts();
-        System.out.println(sanAntonio.getName() + sanAntonio.getLeader());
-        sanAntonio.search();
+        Scanner sc = new Scanner(System.in);
+        City bishkek = new City("Бишкек", "Түлөбаев Балбак Зарлыкович");
+        City naryn = new City("Нарын", "Нурбек Молдокадыров");
+        City kol = new City("Каракол","Каниметов Адыл Жанкорозович");
+        Village maevka = new Village("Маевка", "Человек");
+        Village akmuz = new Village("Акмуз", "Насыров");
+        District sverlov = new District("Свердловский", "Человек1");
+
+        AbstractLocality[] array = {bishkek, naryn, kol, maevka, akmuz, sverlov};
+        for (int i = 0; i < array.length; i++){
+            System.out.println(array[i] + " ");
+        }
+
     }
 }
