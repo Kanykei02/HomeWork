@@ -4,16 +4,16 @@ import java.awt.*;
 import java.util.Random;
 
 public class Painting extends Canvas {
-    public static final int FRAME_SIZE = 500;
+    public static final int FRAME_SIZE = 800;
 
     @Override
     public void paint(Graphics graphics) {
-        Line[] lines = new Line[7];
+        final Line[] lines = new Line[7];
         Random random = new Random();
         for (int i = 0; i < lines.length; i++){
             lines[i] = new Line(random.nextInt(50), random.nextInt(50));
             graphics.setColor(Color.MAGENTA);
-            graphics.drawLine(lines[i].getX(), lines[i].getY(), lines[i].getX(), lines[i].getY2());
+            graphics.fillOval(lines[i].getX(), lines[i].getY(), 1,1);
             System.out.printf("X: %.2f, Y1: %.2f, Y2: %.2fn", lines[i].getX(), lines[i].getY(), lines[i].getY2());
         }
     }

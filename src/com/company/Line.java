@@ -1,6 +1,6 @@
 package com.company;
 
-public class Line {
+public final class Line {
      int x;
      int y;
 
