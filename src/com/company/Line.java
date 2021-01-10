@@ -12,7 +12,7 @@ public final class Line {
     }
 
     public int getX() {
-        return x;
+        return x + 100;
     }
 
     public void setX(int x) {
@@ -20,7 +20,7 @@ public final class Line {
     }
 
     public int getY() {
-        return getX() * getX();
+        return getX() * getX() + 100;
     }
 
     public void setY(int y) {
@@ -28,6 +28,6 @@ public final class Line {
     }
 
     public int getY2() {
-         return getX() * getX() * getX();
+         return getX() * getX() * getX() + 100;
     }
 }
