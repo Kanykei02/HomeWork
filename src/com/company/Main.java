@@ -8,7 +8,7 @@ import java.util.Random;
 public class Main {
 
     public static void main(String[] args) {
-        String[] names = {"Dean", "Cas", "Sam", "Crowly", "Rowena"};
+        String[] names = {"Dean", "Cas", "Sam", "Crowly", "Rowena"};// не до конца поняла как работать при добавлении в середину
         ArrayList<Cat> catArrayList = new ArrayList<>();
         LinkedList<Cat> catLinkedList = new LinkedList<>();
         Random rn = new Random();
