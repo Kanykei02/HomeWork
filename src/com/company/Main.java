@@ -12,6 +12,6 @@ public class Main {
         Thread4 thread4 = new Thread4();
         thread4.start();
         thread4.join();
-        System.out.println(Variable.number);
+        System.out.println(Variable.number);//у меня ответ каждый раз по разному)
     }
 }
